@@ -31,9 +31,15 @@ const Overlay = styled.div`
 const Wrapper = styled.div`
   z-index: 1;
   padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   > p {
     font-size: 24px;
+    white-space: pre-wrap;
+    line-height: 1.5;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
   }
 `
 
@@ -41,14 +47,7 @@ const Content = ({ text, image, index }) => {
   return (
     <Container>
       <Wrapper>
-        <p>
-          {text.split('\n').map((text) => (
-            <>
-              {text}
-              <br />
-            </>
-          ))}
-        </p>
+        <p>{text}</p>
         {image && <img src={`./public/images/${image}`} />}
       </Wrapper>
       <Overlay />

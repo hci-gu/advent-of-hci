@@ -2,11 +2,11 @@ export default [
   {
     index: 1,
     text: `
-    Hello we are the Human-Computer Interaction division and we want to reach out to you through this Christmas calendar.\n
-    We are a small but really active division!\n
-    We manage 3 courses and support 5 courses in total 400 students! \n
-    We just got funding for 3 proposals\n
-    We supervised excellent thesis (2 master and 2 bachelors)\n`,
+Hello we are the Human-Computer Interaction division and we want to reach out to you through this Christmas calendar.
+We are a small but really active division!
+We manage 3 courses and support 5 courses in total 400 students!
+We just got funding for 3 proposals
+We supervised excellent thesis (2 master and 2 bachelors)`,
     url: 'https://hci-gu.github.io/',
     image: 'day_1.gif',
   },
