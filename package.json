@@ -1,0 +1,40 @@
+{
+  "name": "advent-of-hci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "server": "node ./api/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@chakra-ui/icons": "^1.1.1",
+    "@chakra-ui/react": "^1.7.2",
+    "@emotion/react": "^11.7.0",
+    "@emotion/styled": "^11.6.0",
+    "@react-spring/web": "^9.3.1",
+    "add": "^2.0.6",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jotai": "^1.4.5",
+    "moment": "^2.29.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-qrcode-logo": "^2.5.0",
+    "react-snowfall": "^1.1.1",
+    "react-snowstorm": "^0.0.3",
+    "socket.io": "^4.4.0",
+    "socket.io-client": "^4.4.0",
+    "styled-components": "^5.3.3",
+    "yarn": "^1.22.17"
+  },
+  "devDependencies": {
+    "vite": "^2.6.14"
+  }
+}
