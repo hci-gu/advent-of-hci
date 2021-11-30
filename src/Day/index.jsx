@@ -9,6 +9,7 @@ import { setOpenedAtom } from '../state'
 import useOpenedAnimation from '../hooks/useOpenedAnimation'
 
 import woodPatternImg from './wood-pattern.png'
+import Content from './Content'
 const API_URL = import.meta.env.VITE_API_URL
 
 const SIZE = 175
@@ -26,6 +27,8 @@ const StyledGridItem = styled(GridItem)`
   height: ${SIZE}px;
   color: #171e2d;
   color: #fff;
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 48px;
   ${({ isWeekend }) => isWeekend && `color: #db5461;`}
   cursor: pointer;
 
@@ -43,6 +46,9 @@ const StyledGridItem = styled(GridItem)`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    ${({ isOpen }) =>
+      isOpen && `filter: drop-shadow(0px 0px 16px rgba(0,0,0,0.75));`}
   }
 `
 
@@ -55,8 +61,7 @@ const isToday = (date) => {
   return moment(date).isSame(moment('2021-12-01'), 'day')
 }
 
-const Day = ({ date, opened, index, gridIndex }) => {
-  const url = 'https://www.google.com'
+const Day = ({ date, text, image, url, opened, index, gridIndex }) => {
   const [, setOpened] = useAtom(setOpenedAtom)
   const [frontStyle, backStyle] = useOpenedAnimation(opened, gridIndex)
 
@@ -68,6 +73,7 @@ const Day = ({ date, opened, index, gridIndex }) => {
       isWeekend={isWeekend(date)}
       onClick={() => setOpened({ opened: !opened, index })}
       style={{ zIndex: opened ? 1 : 0 }}
+      isOpen={opened}
     >
       <a.div style={frontStyle}>
         {isToday(date) && (
@@ -76,15 +82,13 @@ const Day = ({ date, opened, index, gridIndex }) => {
             size={120}
             bgColor="#fafafa"
             fgColor="#171e2d"
-            //   logoImage={base64Svg()}
-            //   logoWidth={50}
-            //   logoHeight={50}
-            //   fgColor="#f0f0f0"
           />
         )}
         {!isToday(date) && <h1>{index}</h1>}
       </a.div>
-      <a.div style={backStyle}>Backside</a.div>
+      <a.div style={{ ...backStyle, padding: '32px' }}>
+        <Content text={text} image={image} index={index} />
+      </a.div>
     </StyledGridItem>
   )
 }

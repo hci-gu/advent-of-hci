@@ -9,6 +9,7 @@ import Day from './Day'
 import { useAtom } from 'jotai'
 import { daysAtom } from './state'
 import useSocket from './hooks/useSocket'
+import useSong from './hooks/useSong'
 
 const Title = styled.h1`
   font-family: 'Mountains of Christmas', cursive;
@@ -19,6 +20,7 @@ const Title = styled.h1`
 const Index = () => {
   const [days] = useAtom(daysAtom)
   useSocket()
+  useSong()
   return (
     <>
       <Flex

@@ -1,5 +1,6 @@
 import { atom } from 'jotai'
 import moment from 'moment'
+import data from './data'
 
 const shuffleArray = (array) => {
   for (let i = array.length - 1; i > 0; i--) {
@@ -11,12 +12,15 @@ const shuffleArray = (array) => {
 
 export const daysAtom = atom(
   shuffleArray(
-    Array.from({ length: 24 }, (_, i) => {
+    data.map(({ text, url, image, index }, i) => {
       const date = moment('2021-12-01').add(i, 'days').startOf('day')
       return {
-        index: i + 1,
+        index,
         opened: false,
         date,
+        text,
+        image,
+        url,
       }
     })
   )
