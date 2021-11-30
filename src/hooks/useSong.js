@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 const useSong = () => {
   useEffect(() => {
     const audio = new Audio(silentNight)
-    // audio.play()
+    audio.play()
   }, [])
 }
 

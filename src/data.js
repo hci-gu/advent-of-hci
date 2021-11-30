@@ -2,16 +2,34 @@ export default [
   {
     index: 1,
     text: `
-Hello we are the Human-Computer Interaction division and we want to reach out to you through this Christmas calendar.
+Hello, we are the Human-Computer Interaction division at University of Gothenburg, and we want to reach out to you through this Christmas calendar.
 We are a small but really active division!
-We manage 3 courses and support 5 courses in total 400 students!
-We just got funding for 3 proposals
-We supervised excellent thesis (2 master and 2 bachelors)`,
+We manage three courses and support five courses - in total over 400 students! 
+We have four active projects and we just got funding for three more.
+We supervised theses projects on doctoral, master and bachelor levels.
+Please follow our calander to learn more about our work!`,
     url: 'https://hci-gu.github.io/',
     image: 'day_1.gif',
   },
-  { index: 2, text: ``, url: '', image: undefined },
-  { index: 3, text: ``, url: '', image: undefined },
+  {
+    index: 2,
+    text: `
+This year we started a new initiative called Appademin!
+Appademin wants to help researchers at GU with technology development in general and app development in particular. Appademin wants to make our competence available to others, to enable the use of technology among researchers at GU.
+We live in a world that is becoming increasingly digital, and with the help of Appademin, researchers without experience of developing digital services can use the power of digitalization. `,
+    url: 'https://hci-gu.github.io/appademin/',
+    image: undefined,
+  },
+  {
+    index: 3,
+    text: `
+In the beginning of the pandemic, we released initiated the Work from Home movement project.
+WFH is a research app designed to answer the question of whether working from home has caused us to move more or less. This year we have been featured in SVT on two occasions, and we have continued with data analysis of collected data.
+Stay tuned for upcoming publications!
+`,
+    url: 'https://hci-gu.github.io/wfh-movement',
+    image: undefined,
+  },
   { index: 4, text: ``, url: '', image: undefined },
   { index: 5, text: ``, url: '', image: undefined },
   { index: 6, text: ``, url: '', image: undefined },

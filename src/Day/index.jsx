@@ -10,6 +10,7 @@ import useOpenedAnimation from '../hooks/useOpenedAnimation'
 
 import woodPatternImg from './wood-pattern.png'
 import Content from './Content'
+import { daysAtom } from '../state'
 const API_URL = import.meta.env.VITE_API_URL
 
 const SIZE = 175
@@ -49,6 +50,12 @@ const StyledGridItem = styled(GridItem)`
 
     ${({ isOpen }) =>
       isOpen && `filter: drop-shadow(0px 0px 16px rgba(0,0,0,0.75));`}
+
+    > h2 {
+      font-size: 48px;
+      margin: 0;
+      line-height: 0.75;
+    }
   }
 `
 
@@ -58,12 +65,26 @@ const isWeekend = (date) => {
 }
 
 const isToday = (date) => {
-  return moment(date).isSame(moment('2021-12-01'), 'day')
+  return moment(date).isSame(moment(), 'day')
+}
+
+const getDaysLeft = (date) => {
+  const now = moment().startOf('day')
+  const next = moment(date).startOf('day')
+  return next.diff(now, 'days')
+}
+
+const textForRemainingDays = (daysLeft) => {
+  if (daysLeft === 1) {
+    return `Come back tomorrow to see whats behind this door!`
+  }
+  return `Come back in ${daysLeft} days to see whats behind this door!`
 }
 
 const Day = ({ date, text, image, url, opened, index, gridIndex }) => {
   const [, setOpened] = useAtom(setOpenedAtom)
   const [frontStyle, backStyle] = useOpenedAnimation(opened, gridIndex)
+  const daysLeft = getDaysLeft(date)
 
   return (
     <StyledGridItem
@@ -77,17 +98,22 @@ const Day = ({ date, text, image, url, opened, index, gridIndex }) => {
     >
       <a.div style={frontStyle}>
         {isToday(date) && (
-          <QRCode
-            value={`${API_URL}/open?url=${url}&index=${index}`}
-            size={120}
-            bgColor="#fafafa"
-            fgColor="#171e2d"
-          />
+          <>
+            <h2>{index}</h2>
+            <QRCode
+              value={`${API_URL}/open?url=${url}&index=${index}`}
+              size={100}
+              quietZone={6}
+              bgColor="#fafafa"
+              fgColor="#171e2d"
+            />
+          </>
         )}
         {!isToday(date) && <h1>{index}</h1>}
       </a.div>
       <a.div style={{ ...backStyle, padding: '32px' }}>
-        <Content text={text} image={image} index={index} />
+        {daysLeft <= 0 && <Content text={text} image={image} index={index} />}
+        {daysLeft > 0 && <span>{textForRemainingDays(daysLeft)}</span>}
       </a.div>
     </StyledGridItem>
   )

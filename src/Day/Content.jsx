@@ -36,19 +36,24 @@ const Wrapper = styled.div`
   align-items: center;
 
   > p {
-    font-size: 24px;
+    margin: 0 20px;
+    font-size: 20px;
     white-space: pre-wrap;
-    line-height: 1.5;
+    line-height: 1.75;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
+  }
+  > img {
+    margin-top: 16px;
+    border-radius: 8px;
   }
 `
 
-const Content = ({ text, image, index }) => {
+const Content = ({ date, text, image, index }) => {
   return (
     <Container>
       <Wrapper>
         <p>{text}</p>
-        {image && <img src={`./public/images/${image}`} />}
+        {image && <img src={`/public/images/${image}`} />}
       </Wrapper>
       <Overlay />
     </Container>
