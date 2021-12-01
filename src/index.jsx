@@ -29,7 +29,7 @@ const Index = () => {
         flexDirection="column"
         style={{ minHeight: '100vh' }}
       >
-        <Title>Advent of HCI</Title>
+        <Title>Sustainable jukalender</Title>
         <Grid
           templateColumns={
             mobileLayout ? '1fr 1fr 1fr' : '1fr 1fr 1fr 1fr 1fr 1fr'
