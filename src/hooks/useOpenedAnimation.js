@@ -19,7 +19,7 @@ const positionForIndex = (size, windowSize, index) => {
   const leftOffset = col * (size + 8)
   const heightOffset = row * size
   return [
-    windowSize.width * 0.125 - size - leftOffset,
+    windowSize.width * 0.05 - size - leftOffset,
     windowSize.height * 0.125 - size / 2 - heightOffset,
   ]
 }
@@ -34,7 +34,11 @@ const useOpenedAnimation = (opened, gridIndex) => {
     transform: `perspective(600px) rotateY(${opened ? 180 : 0}deg)`,
     left: opened ? x : 0,
     top: opened ? y : 0,
-    width: opened ? windowSize.width * 0.5 : SIZE,
+    width: opened
+      ? mobileLayout
+        ? windowSize.width * 0.9
+        : windowSize.width * 0.5
+      : SIZE,
     height: opened ? windowSize.height * 0.75 : SIZE,
     config: { mass: 5, tension: 400, friction: 120 },
   })
