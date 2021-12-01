@@ -3,10 +3,7 @@ export default [
     index: 1,
     text: `
 Hello, we are the Human-Computer Interaction division at University of Gothenburg, and we want to reach out to you through this Christmas calendar.
-We are a small but really active division!
-We manage three courses and support five courses - in total over 400 students! 
-We have four active projects and we just got funding for three more.
-We supervise thesis projects on doctoral, master and bachelor levels.
+We are a small but really active division! We manage three courses and support five courses - in total over 400 students! We have four active projects and we just got funding for three more. We supervise thesis projects on doctoral, master and bachelor levels.
 Please follow our calander to learn more about our work!`,
     url: 'https://hci-gu.github.io/',
     image: 'day_1.gif',
@@ -17,7 +14,7 @@ Please follow our calander to learn more about our work!`,
 This year we started a new initiative called Appademin!
 Appademin wants to help researchers at GU with technology development in general and app development in particular. Appademin wants to make our competence available to others, to enable the use of technology among researchers at GU.`,
     url: 'https://hci-gu.github.io/appademin/',
-    image: undefined,
+    image: 'day_2.png',
   },
   {
     index: 3,
@@ -27,11 +24,27 @@ WFH is a research app designed to answer the question of whether working from ho
 Stay tuned for upcoming publications!
 `,
     url: 'https://www.youtube.com/watch?v=41aApQhbrTs',
-    image: undefined,
+    image: 'day_3.png',
   },
-  { index: 4, text: ``, url: '', image: undefined },
-  { index: 5, text: ``, url: '', image: undefined },
-  { index: 6, text: ``, url: '', image: undefined },
+  {
+    index: 4,
+    text: `It is Saturday, we hope you watch this from the comfort of your home with a hot coffee or chocolate!`,
+    url: 'https://hci-gu.github.io/',
+    image: 'day_4.jpeg',
+  },
+  {
+    index: 5,
+    text: `Christmas decorations are synonymous with "mysig" - Do not forget to light up the second Adventsljusstake (Andvent candle)`,
+    url: 'https://hci-gu.github.io/',
+    image: 'day_5.jpeg',
+  },
+  {
+    index: 6,
+    text: `Do you think that your grandpa will not appreciate a gaming PC for a Christmas present? Think again.
+Klara Facebook is the product of the digital Seniors project. A project that explored ways to adjust technology to our aging process ended this December. Seniors are not new arrivals in the digital world, they are users with their specific needs – as every other user.`,
+    url: 'https://urplay.se/program/223697-ur-samtiden-om-aldrande-och-att-aldras-den-digitala-senioren',
+    image: 'day_6.png',
+  },
   { index: 7, text: ``, url: '', image: undefined },
   { index: 8, text: ``, url: '', image: undefined },
   { index: 9, text: ``, url: '', image: undefined },
