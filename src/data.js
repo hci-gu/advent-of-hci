@@ -6,7 +6,7 @@ Hello, we are the Human-Computer Interaction division at University of Gothenbur
 We are a small but really active division!
 We manage three courses and support five courses - in total over 400 students! 
 We have four active projects and we just got funding for three more.
-We supervise theses projects on doctoral, master and bachelor levels.
+We supervise thesis projects on doctoral, master and bachelor levels.
 Please follow our calander to learn more about our work!`,
     url: 'https://hci-gu.github.io/',
     image: 'day_1.gif',
