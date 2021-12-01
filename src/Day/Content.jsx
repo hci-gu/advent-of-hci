@@ -43,6 +43,7 @@ const Wrapper = styled.div`
     text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
   }
   > img {
+    max-width: 90%;
     margin-top: 16px;
     border-radius: 8px;
   }
@@ -50,6 +51,14 @@ const Wrapper = styled.div`
     margin-top: 16px;
     font-size: 24px;
     color: white;
+  }
+
+  @media (max-width: 768px) {
+    padding: 8px;
+
+    > p {
+      font-size: 14px;
+    }
   }
 `
 

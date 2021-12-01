@@ -118,7 +118,13 @@ const Day = ({ date, text, image, url, opened, index, gridIndex }) => {
         )}
         {(!isToday(date) || mobileLayout) && <h1>{index}</h1>}
       </a.div>
-      <a.div style={{ ...backStyle, padding: '32px' }}>
+      <a.div
+        style={{
+          ...backStyle,
+          padding: '32px',
+          pointerEvents: opened ? 'all' : 'none',
+        }}
+      >
         {daysLeft <= 0 && (
           <Content text={text} image={image} index={index} url={url} />
         )}
