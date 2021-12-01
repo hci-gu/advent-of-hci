@@ -46,14 +46,22 @@ const Wrapper = styled.div`
     margin-top: 16px;
     border-radius: 8px;
   }
+  > a {
+    margin-top: 16px;
+    font-size: 24px;
+    color: white;
+  }
 `
 
-const Content = ({ date, text, image, index }) => {
+const Content = ({ date, text, image, url, index }) => {
   return (
     <Container>
       <Wrapper>
         <p>{text}</p>
         {image && <img src={`/images/${image}`} />}
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          Read more
+        </a>
       </Wrapper>
       <Overlay />
     </Container>

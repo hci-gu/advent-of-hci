@@ -47,7 +47,7 @@ const Index = () => {
 
 const Root = () => {
   useSocket()
-  // useSong()
+  useSong()
 
   return (
     <>

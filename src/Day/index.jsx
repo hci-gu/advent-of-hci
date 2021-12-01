@@ -119,7 +119,9 @@ const Day = ({ date, text, image, url, opened, index, gridIndex }) => {
         {(!isToday(date) || mobileLayout) && <h1>{index}</h1>}
       </a.div>
       <a.div style={{ ...backStyle, padding: '32px' }}>
-        {daysLeft <= 0 && <Content text={text} image={image} index={index} />}
+        {daysLeft <= 0 && (
+          <Content text={text} image={image} index={index} url={url} />
+        )}
         {daysLeft > 0 && <span>{textForRemainingDays(daysLeft)}</span>}
       </a.div>
     </StyledGridItem>
