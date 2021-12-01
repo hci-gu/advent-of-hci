@@ -2,7 +2,7 @@ export default [
   {
     index: 1,
     text: `
-Hello, we are the Human-Computer Interaction division at University of Gothenburg, and we want to reach out to you through this Christmas calendar.
+hhh, we are the Human-Computer Interaction division at University of Gothenburg, and we want to reach out to you through this Christmas calendar.
 We are a small but really active division!
 We manage three courses and support five courses - in total over 400 students! 
 We have four active projects and we just got funding for three more.
