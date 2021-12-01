@@ -14,6 +14,10 @@ function useWindowSize() {
     }
     window.addEventListener('resize', handleResize)
     handleResize()
+    console.log('size', window.innerWidth)
+    setTimeout(() => {
+      console.log('delayed', window.innerWidth)
+    }, 1500)
     return () => window.removeEventListener('resize', handleResize)
   }, [])
   return windowSize

@@ -10,6 +10,7 @@ import { useAtom } from 'jotai'
 import { daysAtom } from './state'
 import useSocket from './hooks/useSocket'
 import useSong from './hooks/useSong'
+import useMobileLayout from './hooks/useMobileLayout'
 
 const Title = styled.h1`
   font-family: 'Mountains of Christmas', cursive;
@@ -19,18 +20,21 @@ const Title = styled.h1`
 
 const Index = () => {
   const [days] = useAtom(daysAtom)
-  useSocket()
-  useSong()
+  const mobileLayout = useMobileLayout()
   return (
     <>
       <Flex
         justifyContent="center"
         alignItems="center"
         flexDirection="column"
-        h={'100vh'}
+        style={{ minHeight: '100vh' }}
       >
         <Title>Advent of HCI</Title>
-        <Grid templateColumns="1fr 1fr 1fr 1fr 1fr 1fr">
+        <Grid
+          templateColumns={
+            mobileLayout ? '1fr 1fr 1fr' : '1fr 1fr 1fr 1fr 1fr 1fr'
+          }
+        >
           {days.map((d, i) => (
             <Day {...d} gridIndex={i} key={`Day_${d.index}`} />
           ))}
@@ -41,9 +45,20 @@ const Index = () => {
   )
 }
 
+const Root = () => {
+  useSocket()
+  // useSong()
+
+  return (
+    <>
+      <Index />
+    </>
+  )
+}
+
 ReactDOM.render(
   <React.StrictMode>
-    <Index />
+    <Root />
   </React.StrictMode>,
   document.getElementById('root')
 )
