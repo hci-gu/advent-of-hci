@@ -53,7 +53,7 @@ const Content = ({ date, text, image, index }) => {
     <Container>
       <Wrapper>
         <p>{text}</p>
-        {image && <img src={`/public/images/${image}`} />}
+        {image && <img src={`/images/${image}`} />}
       </Wrapper>
       <Overlay />
     </Container>
