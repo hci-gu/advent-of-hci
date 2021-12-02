@@ -1,25 +1,55 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useLayoutEffect, useRef, useState } from 'react'
+
+function useEventListener(eventName, handler, element) {
+  const savedHandler = useRef()
+
+  useEffect(() => {
+    const targetElement = (element && element.current) || window
+    if (!(targetElement && targetElement.addEventListener)) {
+      return
+    }
+
+    // Update saved handler if necessary
+    if (savedHandler.current !== handler) {
+      savedHandler.current = handler
+    }
+
+    // Create event listener that calls handler function stored in ref
+    const eventListener = (event) => {
+      // eslint-disable-next-line no-extra-boolean-cast
+      if (!!savedHandler && !!savedHandler.current) {
+        savedHandler.current(event)
+      }
+    }
+
+    targetElement.addEventListener(eventName, eventListener)
+
+    // Remove event listener on cleanup
+    return () => {
+      targetElement.removeEventListener(eventName, eventListener)
+    }
+  }, [eventName, element, handler])
+}
 
 function useWindowSize() {
   const [windowSize, setWindowSize] = useState({
-    width: undefined,
-    height: undefined,
+    width: 0,
+    height: 0,
   })
-  useEffect(() => {
-    function handleResize() {
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      })
-    }
-    window.addEventListener('resize', handleResize)
-    handleResize()
-    console.log('size', window.innerWidth)
-    setTimeout(() => {
-      console.log('delayed', window.innerWidth)
-    }, 1500)
-    return () => window.removeEventListener('resize', handleResize)
+
+  const handleSize = () => {
+    setWindowSize({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    })
+  }
+
+  useEventListener('resize', handleSize)
+
+  useLayoutEffect(() => {
+    handleSize()
   }, [])
+
   return windowSize
 }
 

@@ -2,7 +2,7 @@ export default [
   {
     index: 1,
     text: `
-Consider buying your Christmas decorations in a second hand store! Under the link, you can find a list of second hand stores all over town!
+Consider buying your Christmas decorations in a second hand store! Under the link, you can find a list of second hand stores all over town!`,
     url: 'https://sites.google.com/view/hallbar-julkalender/buy-decorations-in-a-second-hand',
     image: undefined,
   },
@@ -16,17 +16,28 @@ Here comes a link with the upcoming Christmas markets:`,
   },
   {
     index: 3,
-    text: `
-In the beginning of the pandemic, we released initiated the Work from Home movement project.
-WFH is a research app designed to answer the question of whether working from home has caused us to move more or less. This year we have been featured in SVT on two occasions, and we have continued with data analysis of collected data.
-Stay tuned for upcoming publications!
-`,
-    url: 'https://hci-gu.github.io/wfh-movement',
+    text: ``,
+    url: '',
     image: undefined,
   },
-  { index: 4, text: ``, url: '', image: undefined },
-  { index: 5, text: ``, url: '', image: undefined },
-  { index: 6, text: ``, url: '', image: undefined },
+  {
+    index: 4,
+    text: ``,
+    url: '',
+    image: undefined,
+  },
+  {
+    index: 5,
+    text: ``,
+    url: '',
+    image: undefined,
+  },
+  {
+    index: 6,
+    text: ``,
+    url: '',
+    image: undefined,
+  },
   { index: 7, text: ``, url: '', image: undefined },
   { index: 8, text: ``, url: '', image: undefined },
   { index: 9, text: ``, url: '', image: undefined },

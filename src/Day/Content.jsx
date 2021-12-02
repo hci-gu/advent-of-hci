@@ -43,7 +43,7 @@ const Wrapper = styled.div`
     text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
   }
   > img {
-    max-width: 90%;
+    max-width: 80%;
     margin-top: 16px;
     border-radius: 8px;
   }

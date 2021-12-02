@@ -9,7 +9,7 @@ const positionForIndex = (size, windowSize, index) => {
     const leftOffset = col * (size + 8)
     const heightOffset = row * size
     return [
-      windowSize.width * 0.125 - size - leftOffset,
+      windowSize.width * 0.05 - size - leftOffset,
       windowSize.height * 0.125 - size / 2 - heightOffset,
     ]
   }
@@ -19,7 +19,7 @@ const positionForIndex = (size, windowSize, index) => {
   const leftOffset = col * (size + 8)
   const heightOffset = row * size
   return [
-    windowSize.width * 0.05 - size - leftOffset,
+    windowSize.width * 0.125 - size - leftOffset,
     windowSize.height * 0.125 - size / 2 - heightOffset,
   ]
 }

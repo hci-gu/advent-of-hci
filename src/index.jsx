@@ -18,6 +18,28 @@ const Title = styled.h1`
   color: #db5461;
 `
 
+const Footer = styled.div`
+  align-self: center;
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-weight: 200;
+
+  > p > a {
+    width: 100%;
+    font-weight: 400;
+    margin: 0 3px;
+    color: #fafafa;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    margin: 0 auto;
+    width: 80%;
+  }
+`
+
 const Index = () => {
   const [days] = useAtom(daysAtom)
   const mobileLayout = useMobileLayout()
@@ -39,6 +61,15 @@ const Index = () => {
             <Day {...d} gridIndex={i} key={`Day_${d.index}`} />
           ))}
         </Grid>
+        <Footer>
+          <p>
+            Created by{' '}
+            <a href="https://hci-gu.github.io/" target="_blank">
+              the division of Human-Computer Interaction
+            </a>{' '}
+            @ GU
+          </p>
+        </Footer>
       </Flex>
       <Snowfall />
     </>
@@ -47,7 +78,7 @@ const Index = () => {
 
 const Root = () => {
   useSocket()
-  // useSong()
+  useSong()
 
   return (
     <>
