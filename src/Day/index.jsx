@@ -70,11 +70,11 @@ const isWeekend = (date) => {
 }
 
 const isToday = (date) => {
-  return moment(date).isSame(moment('2021-12-01'), 'day')
+  return moment(date).isSame(moment(), 'day')
 }
 
 const getDaysLeft = (date) => {
-  const now = moment('2021-12-01').startOf('day')
+  const now = moment().startOf('day')
   const next = moment(date).startOf('day')
   return next.diff(now, 'days')
 }
