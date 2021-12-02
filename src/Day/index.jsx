@@ -43,6 +43,13 @@ const StyledGridItem = styled(GridItem)`
 
     ${({ isOpen }) =>
       isOpen && `filter: drop-shadow(0px 0px 16px rgba(0,0,0,0.75));`}
+    > h1 {
+      ${({ isToday }) =>
+        isToday &&
+        `
+        color: #FFC43D;
+      `}
+    }
 
     > h2 {
       font-size: 36px;
@@ -102,21 +109,10 @@ const Day = ({ date, text, image, url, opened, index, gridIndex }) => {
       onClick={() => setOpened({ opened: !opened, index })}
       style={{ zIndex: opened ? 1 : 0 }}
       isOpen={opened}
+      isToday={isToday(date)}
     >
       <a.div style={frontStyle}>
-        {isToday(date) && !mobileLayout && (
-          <>
-            <h2>{index}</h2>
-            <QRCode
-              value={`${API_URL}/open?url=${url}&index=${index}`}
-              size={128}
-              quietZone={6}
-              bgColor="#fafafa"
-              fgColor="#171e2d"
-            />
-          </>
-        )}
-        {(!isToday(date) || mobileLayout) && <h1>{index}</h1>}
+        <h1>{index}</h1>
       </a.div>
       <a.div
         style={{
