@@ -2,22 +2,16 @@ export default [
   {
     index: 1,
     text: `
-hhh, we are the Human-Computer Interaction division at University of Gothenburg, and we want to reach out to you through this Christmas calendar.
-We are a small but really active division!
-We manage three courses and support five courses - in total over 400 students! 
-We have four active projects and we just got funding for three more.
-We supervised theses projects on doctoral, master and bachelor levels.
-Please follow our calander to learn more about our work!`,
-    url: 'https://hci-gu.github.io/',
-    image: 'day_1.gif',
+Consider buying your Christmas decorations in a second hand store! Under the link, you can find a list of second hand stores all over town!
+    url: 'https://sites.google.com/view/hallbar-julkalender/buy-decorations-in-a-second-hand',
+    image: undefined,
   },
   {
     index: 2,
     text: `
-This year we started a new initiative called Appademin!
-Appademin wants to help researchers at GU with technology development in general and app development in particular. Appademin wants to make our competence available to others, to enable the use of technology among researchers at GU.
-We live in a world that is becoming increasingly digital, and with the help of Appademin, researchers without experience of developing digital services can use the power of digitalization. `,
-    url: 'https://hci-gu.github.io/appademin/',
+Consider buying Christmas decorations and presents at local Christmas markets! It is a great way to support also local businesses and artists; as well as getting gifts that are personal! 
+Here comes a link with the upcoming Christmas markets:`,
+    url: 'https://sites.google.com/view/hallbar-julkalender/2nd',
     image: undefined,
   },
   {
