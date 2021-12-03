@@ -23,13 +23,13 @@ const StyledGridItem = styled(GridItem)`
   color: #fff;
   font-family: 'Mountains of Christmas', cursive;
   font-size: 48px;
-  ${({ isWeekend }) => isWeekend && `color: #db5461;`}
+  ${({ isWeekend }) => isWeekend && `color: #49a078;`}
   cursor: pointer;
 
   > div {
     background-image: url(${woodPatternImg});
     position: absolute;
-    background-color: rgba(40, 0, 10, 1);
+    background-color: rgba(63, 41, 43, 1);
     border: 1px solid rgba(0, 0, 0, 0.4);
     border-radius: 8px;
     width: 100%;

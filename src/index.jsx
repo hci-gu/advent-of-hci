@@ -15,7 +15,7 @@ import useMobileLayout from './hooks/useMobileLayout'
 const Title = styled.h1`
   font-family: 'Mountains of Christmas', cursive;
   font-size: 48px;
-  color: #db5461;
+  color: #49a078;
 `
 
 const Footer = styled.div`
