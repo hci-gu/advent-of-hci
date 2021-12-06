@@ -45,7 +45,13 @@ Klara Facebook is the product of the digital Seniors project. A project that exp
     url: 'https://urplay.se/program/223697-ur-samtiden-om-aldrande-och-att-aldras-den-digitala-senioren',
     image: 'day_6.png',
   },
-  { index: 7, text: ``, url: '', image: undefined },
+  {
+    index: 7,
+    text: `Do you know how much energy you spend on wrapping your gifts?
+The More Stamina project explores the design, development, and commercialisation of the MS app. The MS app helps users with Multiple Sclerosis (a disease of the nervous system) to learn to estimate their energy levels each activity takes. People with Multiple Sclerosis suffer from extreme fatigue apart from mobility, vision, and sensation issues.`,
+    url: 'https://www.morestaminaapp.com/team/ ',
+    image: 'day_7.png',
+  },
   { index: 8, text: ``, url: '', image: undefined },
   { index: 9, text: ``, url: '', image: undefined },
   { index: 10, text: ``, url: '', image: undefined },
