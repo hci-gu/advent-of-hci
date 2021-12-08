@@ -52,7 +52,12 @@ The More Stamina project explores the design, development, and commercialisation
     url: 'https://www.morestaminaapp.com/team/ ',
     image: 'day_7.png',
   },
-  { index: 8, text: ``, url: '', image: undefined },
+  {
+    index: 8,
+    text: `It is an annual event to celebrate the diversity of our brains, share challenges and solutions. Dyslexia, anxiety, ADHD, depression, you can carry whatever label. This event is for all the brains who work and study in academia.`,
+    url: 'https://www.vasilikimylo.com/events',
+    image: 'day_8.jpeg',
+  },
   { index: 9, text: ``, url: '', image: undefined },
   { index: 10, text: ``, url: '', image: undefined },
   { index: 11, text: ``, url: '', image: undefined },
