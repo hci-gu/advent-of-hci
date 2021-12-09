@@ -58,7 +58,12 @@ The More Stamina project explores the design, development, and commercialisation
     url: 'https://www.vasilikimylo.com/events',
     image: 'day_8.jpeg',
   },
-  { index: 9, text: ``, url: '', image: undefined },
+  {
+    index: 9,
+    text: `RED Infra reveal is a tool developed for the RED research project to visualize and map data traffic when using different digital services. You can read more about the project in the link below, and stay tuned for a public version of the tool to come out next year!`,
+    url: 'https://www.edu-digitalinequality.org/reconfigurations-of-educational-in-equality-in-a-digital-world-red-2/',
+    image: 'day_9.png',
+  },
   { index: 10, text: ``, url: '', image: undefined },
   { index: 11, text: ``, url: '', image: undefined },
   { index: 12, text: ``, url: '', image: undefined },
