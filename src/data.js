@@ -64,7 +64,14 @@ The More Stamina project explores the design, development, and commercialisation
     url: 'https://www.edu-digitalinequality.org/reconfigurations-of-educational-in-equality-in-a-digital-world-red-2/',
     image: 'day_9.png',
   },
-  { index: 10, text: ``, url: '', image: undefined },
+  {
+    index: 10,
+    text: `Have your grandma ever asked you for help with her smartphone and only couple of minutes later you were saying "oh grandma, you are too slow!" 
+Project ACCESS creates new spaces focused on fostering learning of older adults in how to use digital tools by inviting them into participatory workshops. For more information you can visit: 
+  `,
+    url: 'https://www.katkacerna.com/stories-from-the-field/access-in-pandemic',
+    image: undefined,
+  },
   { index: 11, text: ``, url: '', image: undefined },
   { index: 12, text: ``, url: '', image: undefined },
   { index: 13, text: ``, url: '', image: undefined },
