@@ -72,9 +72,25 @@ Project ACCESS creates new spaces focused on fostering learning of older adults 
     url: 'https://www.katkacerna.com/stories-from-the-field/access-in-pandemic',
     image: undefined,
   },
-  { index: 11, text: ``, url: '', image: undefined },
-  { index: 12, text: ``, url: '', image: undefined },
-  { index: 13, text: ``, url: '', image: undefined },
+  {
+    index: 11,
+    text: `Time to take some time to enjoy Gothenburg Christmas markets!`,
+    url: 'https://www.goteborg.com/en/guides/christmas-markets-in-gothenburg',
+    image: 'day_10.jpeg',
+  },
+  {
+    index: 12,
+    text: `Tomorrow is Lucia day but today could be a Lussekatter eating day! - Do not forget to light up the second Adventsljusstake (Advent candle)`,
+    url: 'https://sweden.se/culture/food/saffron-buns-and-gingerbread-biscuits',
+    image: 'day_11.jpeg',
+  },
+  {
+    index: 13,
+    text: `At the end of February this year the WFH Movement project was part of the SVT show "Vetenskapens värld" for the special episode "Coronakampens pris".
+Follow the link to see it on SVT Play, the interview with Alexandra is around 30 minutes into the episode.`,
+    url: 'https://www.svtplay.se/video/30291114/vetenskapens-varld/vetenskapens-varld-sasong-34-coronakampens-pris',
+    image: 'day_13.png',
+  },
   { index: 14, text: ``, url: '', image: undefined },
   { index: 15, text: ``, url: '', image: undefined },
   { index: 16, text: ``, url: '', image: undefined },
