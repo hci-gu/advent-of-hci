@@ -91,7 +91,12 @@ Follow the link to see it on SVT Play, the interview with Alexandra is around 30
     url: 'https://www.svtplay.se/video/30291114/vetenskapens-varld/vetenskapens-varld-sasong-34-coronakampens-pris',
     image: 'day_13.png',
   },
-  { index: 14, text: ``, url: '', image: undefined },
+  {
+    index: 14,
+    text: `Last summer Sebastian planted some cucumbers in his apartment but documented their journey from seedlings to plants. Since he got access to the OpenAI API the same week he decided to make you able to talk to them. The chat part is no longer working but the website is still running.`,
+    url: 'https://gurka.fun/',
+    image: 'day_14.png',
+  },
   { index: 15, text: ``, url: '', image: undefined },
   { index: 16, text: ``, url: '', image: undefined },
   { index: 17, text: ``, url: '', image: undefined },
