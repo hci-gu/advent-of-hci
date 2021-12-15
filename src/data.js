@@ -97,7 +97,14 @@ Follow the link to see it on SVT Play, the interview with Alexandra is around 30
     url: 'https://gurka.fun/',
     image: 'day_14.png',
   },
-  { index: 15, text: ``, url: '', image: undefined },
+  {
+    index: 15,
+    text: `Do you think you your screentime takes over your Christmas time?
+Send your phone to jail - last years Christmas gift of the year in Sweden was a mobile phone box (mobillåda).  
+  `,
+    url: 'https://dl.acm.org/doi/abs/10.1145/3457867',
+    image: 'day_15.jpeg',
+  },
   { index: 16, text: ``, url: '', image: undefined },
   { index: 17, text: ``, url: '', image: undefined },
   { index: 18, text: ``, url: '', image: undefined },
