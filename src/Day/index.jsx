@@ -103,8 +103,8 @@ const Day = ({ date, text, image, url, opened, index, gridIndex }) => {
       style={{ zIndex: opened ? 1 : 0 }}
       isOpen={opened}
     >
-      <a.div style={frontStyle}>
-        {isToday(date) && !mobileLayout && (
+      <a.div style={{ ...frontStyle, color: isToday(date) ? '#ff0f' : '' }}>
+        {url && isToday(date) && !mobileLayout && (
           <>
             <h2>{index}</h2>
             <QRCode
@@ -116,7 +116,7 @@ const Day = ({ date, text, image, url, opened, index, gridIndex }) => {
             />
           </>
         )}
-        {(!isToday(date) || mobileLayout) && <h1>{index}</h1>}
+        {(!url || !isToday(date) || mobileLayout) && <h1>{index}</h1>}
       </a.div>
       <a.div
         style={{

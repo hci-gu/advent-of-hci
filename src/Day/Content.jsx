@@ -68,9 +68,11 @@ const Content = ({ date, text, image, url, index }) => {
       <Wrapper>
         <p>{text}</p>
         {image && <img src={`/images/${image}`} />}
-        <a href={url} target="_blank" rel="noopener noreferrer">
-          Read more
-        </a>
+        {url && (
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            Read more
+          </a>
+        )}
       </Wrapper>
       <Overlay />
     </Container>

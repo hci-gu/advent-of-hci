@@ -144,9 +144,19 @@ Send your phone to jail - last years Christmas gift of the year in Sweden was a 
   {
     index: 22,
     text: `Martin has been working gamification of memory training and rehabilitation for people with cognitive impairment. Through a Unity game mixing tictactoe and elements of memorization.`,
-    url: '',
+    url: undefined,
     image: 'day_22.png',
   },
-  { index: 23, text: ``, url: '', image: undefined },
-  { index: 24, text: ``, url: '', image: undefined },
+  {
+    index: 23,
+    text: `This year, our intern Shreyas Gupta, an iMTech Student | IIIT Bangalore, designed a new way to study screen time in families. We have really enjoyed working with all our student interns, and are looking forward to collaborating with more students in 2022. Please don\'t hesitate to contact us if you have a project idea!`,
+    url: undefined,
+    image: 'day_23.jpeg',
+  },
+  {
+    index: 24,
+    text: `Thank you for following our Christmas calendar and learning more about the work in the division of Human Computer Interaction at the Department of Applied IT, University of Gothenburg. From all of us to all of you, a Very Merry Christmas!`,
+    url: 'https://hci-gu.github.io/',
+    image: 'day_24.jpeg',
+  },
 ]
